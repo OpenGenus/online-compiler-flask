@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online C Compiler</title>
+</head>
+<body>
+	<form action="/submit" method="post">
+		<label for="code">Type your code here:</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label for="output">This is the output.</label><br>
+
+		<textarea id="code" name="code" rows="30" cols="50" style="resize:none" required placeholder="//Enter your code here.">{{code}}</textarea>
+		<textarea id="output" name="output" rows="30" cols="50" style="resize:none" placeholder="//Your output here.">{{output}}</textarea><br>
+		
+		<label for="input">Enter your input:</label><br>
+		<textarea id="input" name="input" rows="5" cols="50" style="resize:none" placeholder="//Your Input here.">{{input}}</textarea>
+		<input type="checkbox" name="check" id="GFG" 
+                    value="1" {{check}}>Enable input<br> 
+		
+		<button type="submit">Run Code</button>
+</form>
+</body>
+</html>
